@@ -87,7 +87,7 @@ for ($i = 0; $i < count($files); $i++) {
   margin-left:-2%;
   margin-top: -70px;
 ">
-        <table style="border: 1px solid black;background-color:pink" width="100%">
+        <table style="border: 1px solid black;background-color:red" width="100%">
         <tr><td width="100%">
               <div id ="contentButton" style="background-color:gray;">
                     <table width="100%" style="border: 2x solid black">
