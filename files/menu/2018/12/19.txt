@@ -1,0 +1,1 @@
+a:5:{s:5:"fecha";s:8:"20181219";s:2:"p1";a:3:{i:0;s:18:"Ensalada de quesos";i:1;s:15:"Sopa de cebolla";i:2;s:24:"Menestra con champiñones";}s:2:"p2";a:3:{i:0;s:14:"Pescado fresco";i:1;s:32:"Huevos rotos con patatas y jamón";i:2;s:31:"Churrasco con salsa chimichurri";}s:2:"pr";a:2:{i:0;s:16:"Menestra hervida";i:1;s:14:"Pescado fresco";}s:2:"pp";a:1:{i:0;s:16:"Postres variados";}}

@@ -1,0 +1,115 @@
+
+
+ACORDAR de ACTUALIZAR numero de version
+
+
+Web_D_20200429_V_03.09
+	* Informacion COVID-19
+	
+Web_D_2020xxXX_V_03.08
+	* actualizar kit bienvenida
+	* Nuevas condiciones de permisos
+	* Quienes somos, quitar a Mª Luisa
+
+Web_D_20200103_V_03.07
+	* Poner calendario 2020 como actual, dejar 2018 y 2019
+
+Web_D_20191211_V_03.06
+	* Añadir calendario 2020
+
+Web_D_20191205_V_03.05
+	* Cambio rutas autobus a version 20191201
+	* Se añade ruta Prointec
+	* Tocar CSS para añadir un punto de ruptura mas (640pt), los botones de las rutas no encajaban bien
+
+
+Web_D_20191107_V_03.04
+	* Cambio rutas autobus 
+	* Actualizacion kit bienvenida
+
+Web_D_20191105_V_03.03
+	* Cambio situacion sala formacion
+
+Web_D_20191007_V_03.02
+	* Enlace a kit bienvenida no funcionaba, apuntaba url antigua
+	* Nuevo kit de bienvenida actualizado
+	* Actualizada pagina quienes somos
+	* No iniciaba bien las imagenes de las salas
+	* pequeños ajustes en la pagina quienes-somos
+	* pequeños ajustes en las rutas de autobuses
+
+Web_D_20190621_V_00.03.01
+	* Paso a SRV de 1and1 (IONOS)
+	* Nueva version salas despues de reforma edif principal
+		
+Web_D_20190205_V_00.03.00
+	* Nuevo formato de menu en el comedor
+		* cambiado loader para recibir JSON
+
+Web_D_20190103_V_00.02.10
+	* Añadir calendarios de 2019
+	* Añadir en calendarios horario de jornada intensiva
+	
+
+Web_D_201812xx_V_00.02.09
+	* Actualizar diseño rutas autobus
+	* Añadir ruta autobus Avda America (provisional)
+	* Quitar de pag. emergencias los botones de llamar directamente por no funcionar el visor WEB del movil
+	* Quitar de pag. telefonos los botones de llamar directamente por no funcionar el visor WEB del movil
+	
+	
+Web_D_20181102_V_00.02.08
+	* Añadir pagina SOS y boton
+	* Actualizar enlace a CONCILIA
+	* añadir hospitalizacion en la enfermedad grave
+	* recolocar quienes somos
+	* Poner caducidad de la pagina a 1 dia
+	* pasado #headLink a .headLink en el css y el html 
+	* Cambiada pagina SOS para poner de otra forma el texto y añadir boton de llamar
+	* Cambiada pagina Telefonos para simplificar lista y poder llamar directamente
+
+Web_D_20180921_V_00.02.07
+	* Cambio parada a una comun en Avda America, 4
+
+Web_D_20180511_V_00.02.06 (sin subir a CVS)
+	* Añadir nota en los menus para indicar que no se ponen los cambios en los menus
+	* Cambiar telefonos.php para cambiar el orden y actualizar el numero del medico que estaba mal
+	* Quito a Antonio Hervas de la pagina de "Quienes Somos"
+
+
+Web_D_20170922_V_00.02.05
+	* Eliminar el guion del titulo cuando estamos en la pagina inicial, que se quedaba solo al principio del texto
+	* Poner conjunto de caracteres por defecto para PHP
+	* Ajustar las tareas que realiza Juan Luis, estaban mal
+	* Añadir en foot.php el google analytics
+	* En menu.php, la fecha obtenida por defecto se verifica fuerza a que si es fin de semana ponga el lunes
+	* Nuevos mapas de salas y tabla resumen de las mismas
+
+Web_D_20170503_V_00.02.04
+	* Quitar Tlf de RRHH, el de Belen, se comenta
+	* Menu, cambiar para que imprima todos los platos en una unica celda
+	* Quitar cambio anterior, no quedaba bien
+	* Ajustes en el CSS para la tabla del menu
+	* Actualizada version en foot.php
+
+Web_D_20170417_V_00.02.03
+	* Actualizar telefonos
+	* Quitar descarga del APK
+   
+Web_D_20170316_V_00.02.02
+	* Cambiado new Datetime() por create_date() ya que daba una excepcion al no poner el timeZone
+	* UMW_writeData en util.php, el mkdir los permisos se enviaban como STR y es un INT 0777 y no "0777"
+	* Aviso calendario año anterior mejor resaltado
+	* Actualizada version en foot.php
+
+Web_D_20170119_V_00.02.01
+	* Cambiados calendarios a un formato mas bonito
+
+Web_D_20170118_V_00.02
+	* Añadido Expire headers en el .htaccess
+	* Actualizado calendario a 2017
+	* Añadido ver calendario año anterior
+
+Web_D_20161028_V_00.00.02
+Version con cambios de los nuevos miembros del comite despues de las elecciones
+y algunos pequeños cambios

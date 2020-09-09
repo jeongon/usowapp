@@ -1,0 +1,23 @@
+
+
+
+
+<br/>
+<hr/>
+
+<table width="100%" height="100%" style="border:6px;background-color:pink">
+<tr>
+<td width="60%">
+Mensaje 30000
+</td>
+</tr>
+<tr>
+<td width="50%">
+Mensaje 30001
+</td>
+</tr>
+</table>
+
+
+<hr/>
+<br/>

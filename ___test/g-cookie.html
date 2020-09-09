@@ -1,0 +1,73 @@
+<html>
+<head>
+<title>Index Cookies Test</title>
+
+
+<script type="text/javascript" src="g-cookie.js"></script>
+
+<style>
+.box{
+	border: 1px solid black;
+	text-align: center;
+	width: 200px;
+	background: #FFDDEE;
+	cursor: pointer;
+}
+</style>
+<script>
+
+function getCookie(cname) {
+    var res = GCookieGet(cname);
+    if( res == null ){
+    	alert("La cookie no existe");
+    } else {
+    	alert("La cookie es: "+res);
+    }
+    
+}
+
+function checkCookie(cname) {	
+	alert( GCookieCheck(cname) );
+}
+
+function set500cookies() {	
+
+	for (var i = 0; i < 500; i++) {
+		GCookieSet('2020-12-01 22:33:59-'+i, '123--'+i, 10);
+	}
+}
+
+function read500cookies() {	
+
+	for (var i = 0; i < 500; i++) {
+		
+		name = '2020-12-01 22:33:59-'+i;
+		
+		res = GCookieGet( name );
+	    if( res == null ){
+	    	console.log("La cookie no existe id: "+name);
+	    } else {
+	    	console.log("La cookie ID: "+name + " es: " + res);
+	    }
+	}
+}
+</script>
+</head>
+<body>
+
+
+
+
+
+<div class="box" onclick="javascript:GCookieSet('pp', '123', 1);">Set cookie</div><br>
+<div class="box" onclick="javascript:GCookieSet('pp', 'abc', 1);">Set cookie 2</div><br>
+<div class="box" onclick="javascript:getCookie('pp');">GET cookie</div><br>
+<div class="box" onclick="javascript:checkCookie('pp');">Check cookie</div><br>
+<div class="box" onclick="javascript:GCookieDelete('pp');">DELETE cookie</div><br>
+<br>
+<div class="box" onclick="javascript:set500cookies();">Set 500 cookies</div><br>
+<div class="box" onclick="javascript:read500cookies();">Read 500 cookies</div><br>
+<br>
+
+</body>
+</html>

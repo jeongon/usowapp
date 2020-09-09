@@ -1,0 +1,24 @@
+
+--- SITIOS DONDE VERIFICAR COSAS Y ENLACES periodicamente ----
+* permisos.php: enlace a indraweb
+* calendario.php : Enlaces calendarios indraweb
+
+
+ERRORES
+==========================================
+
+
+MANOLO
+
+	Kit de bienvenida: Funciona el enlace. Del texto "especialmente para la gente que se incorpora en 
+		nuestro centro de trabajo", yo lo cambiaría por "especialmente para los que se incorporan a 
+		nuestro centro de trabajo". Y resaltaría en negrita el texto "salas de reuniones".
+
+
+FUTURO
+=====================================================
+
+JOSE
+	* Sistema de mensajes, que al abrir la APP consulte en el SRV si hay algun mensaje y se lo muestre al usuario
+		** opciones: Entendio, repetir
+		** que tengan fecha de caducidad

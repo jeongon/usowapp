@@ -1,0 +1,37 @@
+
+* OK ---------- - Probar las cookies en la APP MOVIL
+
+*	Los mensajes se podrán
+	o	Listar
+	o	Añadir
+	o	Borrar
+	o	Editar
+	o	Ocultar / Desocultar (útil en caso de no querer borrarlo por si acaso)
+	o	OK ---------- - Log-in / Log-out
+	
+*	Al entrar el usuario se leerá una cookie que indicará el último mensaje leído
+	o	Nota: No se puede discriminar uno a uno los leídos o no sin guardar datos en el servidor por usuario
+		 y eso requeriría login u otro tipo de identificación , por ejemplo el nº de teléfono y almacenarlo en la cookie, pero no lo veo
+	
+*	Si hay mensajes más recientes se da un aviso dejando las opciones de: LEER, DESCARTAR, MAS TARDE
+	o	LEER: entra en la lista de mensajes con el primer mensaje nuevo seleccionado
+	o	DESCARTAR: actualiza la cookie con la fecha-hora actual y los mensajes se consideraran leídos
+	o	MAS TARDE: cierra el dialogo y avisará de nuevo la próxima vez que entre
+	
+*	Habrá una opción para entrar manualmente en la lista de mensajes
+	o	Al entrar se seleccionará el primer mensaje no leído por el usuario basado en la cookie
+	
+*	OK ---------- Los datos en el servidor se guardaran en un directorio especifico de mensajes
+	o	Habrá un subdirectorio por año para que no haya muchos ficheros en un mismo directorio
+	o	Los mensajes constarán de 2 archivos cuyo nombre estará formateado en fechahora
+		**	YYYYMMDD_HHMMSS.tit -> contendrá el título del mensaje 
+		**	YYYYMMDD_HHMMSS.msg -> contendrá el contenido del mensaje
+		**	YYYYMMDD_HHMMSS.hidden -> Fichero cuyo contenido no importa, simplemente indica que el mensaje está oculto
+		
+*	Gestor de los mensajes
+	o	Aparecerá una lista de los mensajes ordenada de más reciente a más antiguo
+	o	Cada ítem tendrá una opción de editar, borrar, ocultar/desocultar y si está leido o no
+	o	Habrá un botón de añadir
+	o	Añadir o editar un mensaje es la misma página, pero se abre con contenido o no en función de si es nuevo o editado
+	o	La información se meterá con un editor WYSIWYG, acrónimo de What You See Is What You Get, es decir que (dentro de ciertos límites) se podrá meter texto formateado e imágenes
+

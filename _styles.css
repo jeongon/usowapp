@@ -1,0 +1,573 @@
+
+/**
+Color rojo: rgb(196, 55, 55) == #C43737
+*/
+
+.float-covid{
+	top: 150px;
+	display: block;
+	margin: auto;
+	width: 100%;
+	border: 1px solid black;
+	background-color: #d8d8d8; 
+}
+
+#salasList{
+	background: #80aaff; //#e6b800;
+	font: 12pt Arial, Verdana;
+	width: 90%;
+/* 	height: 20pt; */
+	padding: 5pt;
+	
+}
+
+.redDark {
+	color: #C43737;
+}
+.red{
+	color:red;
+}
+
+.left {
+	text-align: left;
+}
+
+html{/* 1pt = 1px */
+/* 	font-size: 62.5%; */
+}
+
+body{
+	background: white;
+	font: 12pt Arial, Verdana;
+}
+
+	
+h2 {
+	font-size: 10pt;
+}
+
+#container {
+	height: 95%;
+	width: 96%;
+	margin: 2% auto;
+	max-width: 900px;
+	text-align: center;
+}
+
+
+.texto{
+	text-align: justify;
+}
+
+.texto ul {
+	text-align: left;
+}
+
+a {
+	text-decoration: none;
+	font-weight: bold;
+	color:#C43737;
+}
+a:VISITED {
+	color:#C43737;
+}
+a:HOVER{
+	color:#0066FF;
+}
+
+.subtitulo{
+	font-size: 14pt;
+	font-weight: bold;
+}
+
+.td-50{
+	width: 50%;
+}
+
+/* ------------------------------------- Zona de color de fondo para resaltar un trozo de pagina */
+.resaltado{ 
+	background: #FFFFCC;
+	padding: 10px;
+}
+
+/* ------------------------------------- A-HREF tipo boton */
+.boton, .boton:VISITED, .boton:HOVER, .boton:FOCUS{
+	background: #C43737;
+	color:white;
+	padding: 10px;
+	margin: 5px;
+	width: 80%;
+	display: inline-table;
+	text-align: center;
+}
+
+.botonTd {
+	background: #C43737;
+	white-space: nowrap;
+	margin: 50px;
+}
+
+		
+
+.azul, .azul:VISITED, .azul:HOVER, .azul:FOCUS{
+	background: #77AADD;
+}
+
+/* ----------------------------- CABECERA y PIE --------- INI -----------*/
+#headBox{
+	width: 100%;
+	text-align: center;
+	border-bottom: 5px solid #C43737;
+	/* border-bottom: 5px solid #77AADD;  linea azul */
+}
+#headLeft{
+	width: 10%;
+	text-align: left;
+	vertical-align:bottom;
+}
+#headCenter{
+	width: 80%;
+	text-align: center;
+	vertical-align:middle; 
+	white-space: normal;
+}
+#headRight{
+	width: 10%;
+	text-align: right;
+	vertical-align:bottom;
+}
+
+#headLogo{
+	height: 60px;
+}
+#headLogoBig{
+	width: 200px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#headTitle{
+	font-size: 18pt;
+	font-weight: bold;
+}
+.headLink{
+	text-decoration: none;
+	color: inherit;
+}
+.headLinkImg{
+	height: 40px;
+}
+
+#footBox{
+	width: 100%;
+	font-size: 10pt;
+	text-align: right;
+	border-top: 1px solid #C43737;
+	/* border-bottom: 5px solid #77AADD;  linea azul */
+}
+
+.underline-red{
+	width: 100%;
+	border-bottom: 1px solid #C43737;
+}
+
+/* ----------------------------- CABECERA y PIE ------------ FIN --------*/
+
+
+/* ----------------------------- HOME --------------------*/
+
+
+.tblHome {
+	width: 95%;
+	vertical-align: top;
+	border: 0px solid black;
+	margin: 0px auto;
+}
+
+.tblHome td {
+	border: 0px solid black;
+	text-align: center;
+	width: 33%;
+	font: 11pt  Arial, Verdana;
+	font-weight: bold;
+	padding: 10px;
+	margin: 0px;
+	text-align: center;
+	vertical-align: top;
+}
+
+.homeAreaLink, .homeAreaLink:VISITED, .homeAreaLink:FOCUS{
+	font-size: 10pt;
+	text-decoration: none;
+	color: #C43737;
+}
+.homeAreaLink:HOVER{
+	color: #0066FF;
+}
+
+.homeAreaImg{
+/* 	border: 0px solid black; */
+	height: 80px;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+
+
+/* ----------------------------- HOME ---------- FIN ----------*/
+
+/* ----------------------------- MENU ---------- INI ----------*/
+.flecha {
+	width: 45px;
+}
+.flechaEspacio{
+	width:150px;
+	height:1px;
+}
+/* ----------------------------- MENU ---------- FIN ----------*/
+
+
+#boxPermisos {
+	background: #5CD6D6;
+}
+#boxCalendario {
+	background: #85E085;
+}
+#boxBus {
+	background: #FFFF99;
+}
+#boxContacto {
+	background: #FF9696;
+}
+#boxQuien {
+	background: #FF99FF;
+}
+#boxMenu {
+	background: #CCCCFF;
+}
+#boxSalas {
+	background: #CC00FF;
+}
+#boxKit {
+	background: #AAAAAA;
+}
+
+
+/* ----------------------------- TABLA EMERGENCIA ---------- INI ----------*/
+.tblEmergency{
+	margin: 0px auto;
+	width: 50%;
+	border-collapse:collapse;
+	border: none;
+}
+.tblEmergency td{
+	border-top: 1px solid black;
+	font-size: 20px;
+}
+
+/* ----------------------------- TABLA DATOS ---------- INI ----------*/
+.tblDatos{
+	margin: 0px auto;
+	width: 90%;
+	border-collapse:collapse;
+	border: none;
+	border-bottom: 1px solid black;
+}
+
+
+.tblDatos thead td{
+	background: #333333;
+	padding: 5px;
+	font-weight: bold;
+    color: #FFFFFF;
+}
+
+
+.tblDatos td{
+	border-right: 1px solid black;
+	border-left: 1px solid black;
+	font-size: 12pt;
+}
+
+.tblDatos tr:nth-child(odd){
+    background: #cccccc;
+    color: #000000;
+}
+
+.tblDatos tr:nth-child(even){
+    background: #FFFFFF;
+    color: #000000;
+}
+
+/* ----------------------------- TABLA DATOS ---------- FIN ----------*/
+
+/* ----------------------------- TABLA MENU ---------- INI ----------*/
+.tblMenu{
+	margin: 0px auto;
+	width: 100%;
+	border: none;
+}
+
+
+.tblMenu thead tr{
+	margin-bottom: 100px;
+}
+.tblMenu thead td{
+	font-size: 16pt;
+	text-align: center;
+	font-weight: bold;
+    padding: 10px;
+}
+
+.tblMenu td.tblSubtitle{
+	color: #C43737;
+	font-size: 14pt;
+	font-weight: bold;
+    padding: 10px;
+    border-bottom: 0px solid #C43737;
+}
+
+
+.tblMenu td{
+	border: 0px solid black;
+    padding: 5px;
+}
+
+/* ----------------------------- TABLA MENU ---------- FIN ----------*/
+
+/* ----------------------------- TABLA QUIENES ---------- INI ----------*/
+
+.tblquienes{
+	margin: 0 auto;
+	width: 70%;
+	text-align: center;
+	border: 10px;
+}
+
+
+.tblquienes .td-quien{
+	text-align: left;
+}
+
+.tblquienes .td-foto{
+	text-align: center;
+	padding: 5px 5px 10px 5px;
+	border-top: 1px solid #C43737;
+}
+.tblquienes .td-foto img{
+	width: 100px;
+}
+.tblquienes .td-name{
+	text-align: left;
+	padding: 5px 20px 5px 20px;
+	border-top: 1px solid #C43737;
+	white-space: nowrap;
+}
+.tblquienes .td-subname{
+	font-size: smaller;
+	font-weight: bold;
+}
+.tblquienes .td-mail{
+	color: #C43737;
+	width: 100%;
+	text-align: right;
+	font-size: smaller;
+}
+
+/* ----------------------------- TABLA QUIENES ---------- FIN ----------*/
+
+.avisoOK {
+	background: #CCFF99;
+	font-size: 16pt;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.avisoERROR {
+	background: #FF6666;
+	font-size: 16pt;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.botAction {
+	text-decoration: none;
+	background: #A3D1FF;
+	font-size: 13pt;
+	font-style: normal;
+	font-weight: normal;
+	color: black;
+	padding: 10px 5px;
+	margin: 15px;
+	border: 0px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.img-ruta {
+	width: 50%;
+}
+
+.imgSalaH{
+	display: block;
+	width: 100%;
+}
+.imgSalaV{
+	display: none;
+	width: 100%;
+}
+
+#img-leyenda{
+	width: 50%;
+	margin: auto;
+}
+
+
+.btn {
+	font-size: 12px;
+}
+
+/* ============================          Móviles en vertical
+   ---------------------------------------------------------- */
+@media only screen and ( max-width : 640px ) {
+	
+	
+	body{
+		font-size: 10.5pt;
+	}
+	
+	.img-ruta{
+		width: 75%;
+	}
+	
+	.botonTd {
+		white-space: normal;
+		margin: 25px;
+	}
+	
+}
+
+/* ============================          Móviles en vertical
+   ---------------------------------------------------------- */
+@media only screen and ( max-width : 480px ) {
+	
+	
+	
+	body{
+		font-size: 10.5pt;
+	}
+	
+	#headLogoBig{
+		width: 140px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	
+	#headLogo{
+		height: 30px;
+	}
+	
+	.headLinkImg{
+		height: 30px;
+	}
+		
+	#headLeft{
+		width: 10%;
+	}
+	#headCenter{
+		width: 55%;
+	}
+	#headRight{
+		width: 10%;
+	}
+	
+	#headTitle{
+		font-size: 11pt;
+	}
+		
+	/* ----------------------------- MENU ---------- INI ----------*/
+	
+	.tblMenu thead td{
+		font-size: 12pt;
+	}
+	
+	.tblMenu td.tblSubtitle{
+	font-size: 10pt;
+	}
+	
+	
+	.flecha {
+		width:35px;
+	}
+	.flechaEspacio{
+		width:100px;
+		height:1px;
+	}
+	/* ----------------------------- MENU ---------- FIN ----------*/
+	
+	.tblEmergency{
+		width: 90%;
+	}
+	
+	.avisoERROR {
+		font-size: 12pt;
+	}
+	
+	
+	.tblDatos td{
+		font-size: 10pt;
+	}
+	
+	
+	.boton, .boton:VISITED, .boton:HOVER, .boton:FOCUS {
+		padding: 5px;
+		margin: 5px;
+		width: 80%;
+	}
+	
+
+	.botonTd {
+		white-space: normal;
+		margin: 20px;
+	}
+
+	
+	.img-ruta{
+		width: 100%;
+	}
+	
+	
+	.imgSalaH{
+		display: none;
+		visibility: hidden;  /* collapse; */
+		width: 100%;
+	}
+	.imgSalaV{
+		display: block;
+		visibility: visible;
+		width: 100%;
+	}
+
+	#img-leyenda{
+		width: 80%;
+	}
+	
+	.tblquienes{
+		width: 100%;
+	}
+	
+	.tblquienes .td-name{
+		font-size: 11pt;
+		white-space: normal;
+	}
+	
+	
+
+	.subtitulo{
+		font-size: 13pt;
+	}
+}
+
+
