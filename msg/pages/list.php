@@ -1,5 +1,4 @@
 
-<script src="/lib/jquery.min.js"></script>
 
 
 
@@ -46,7 +45,19 @@ for ($i = 0; $i < count($files); $i++) {
     <div class="p-2 text-left">2020-09-01</div>
 
     <div class="p-2 flex-fill text-left">
-      <A onclick='showMessage("<?= $msgs[$i] ?>","<?= include $msgs[$i] ?>")'><?= include $msgs[$i] ?></A>
+
+          <!-- onclick='showMessage("<?= $msgs[$i] ?>","<?= include $msgs[$i] ?>")'     -->
+
+      
+      <A data-msg-title="<?= include $msgs[$i] ?>"
+         data-msg-filetit="<?= $msgs[$i] ?>"
+          
+
+          data-toggle="modal" data-target="#contentParent"
+
+      ><?= include $msgs[$i] ?></A>
+      
+
     </div>
 
     <script>
@@ -63,50 +74,103 @@ for ($i = 0; $i < count($files); $i++) {
 <?php } ?>  
   
 
+
+<!-- The Modal 
+<div class="modal" id="contentParent">
+-->
+
+<div class="modal fade" id="contentParent" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 id="contentTitle" class="modal-title">Modal Heading</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"
+        >&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div id ="content" class="modal-body">
+        Modal body..
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button  type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
 <script>
+
+  
+  //onclick='closeDiv()'
 
   $.ajaxSetup ({
       // Disable caching of AJAX responses
       cache: false
   });
+
+
     function showMessage(fileTit,titulo){
       fileTit=fileTit.replace(".tit",".txt");
-      
           $("#contentTitle").text(titulo);
           $("#content").load("../"+fileTit);
-          $("#contentParent").show()
+          openDiv();
     }
 
+
+
+
+
+
+    DIV_CONTENT='#contentParent';
+    function closeDiv(){
+      // $(DIV_CONTENT).hide();
+      $(DIV_CONTENT).modal('hide')
+    }
+
+    function openDiv(){
+      
+      // $(DIV_CONTENT).show();
+      $(DIV_CONTENT).modal('show')
+    }
+
+
+
+
+    // console.log($(DIV_CONTENT))
+    $(DIV_CONTENT).on('show.bs.modal', function (e) {
+      fromElement=$(e.relatedTarget);
+      //title
+      title=fromElement.data('msg-title');
+      
+      //body (recibimos nombre fichero titulo)
+      fileTit=fromElement.data('msg-filetit');
+      fileBody=fileTit.replace(".tit",".txt");
+
+      //actualizamos
+      $("#contentTitle").text(title);
+      $("#content").load("../"+fileBody);
+
+    })
+
+    $(DIV_CONTENT).on('shown.bs.modal', function(){
+      // alert("tras mostrarse");
+    });
+
+    $(DIV_CONTENT).on('hide.bs.modal', function(){
+      // alert("antes de hide");
+    });
+
+    $(DIV_CONTENT).on('hidden.bs.modal', function(){
+      // alert("tras  hide");
+    });
 </script>
 
-<div id="contentParent"style="background-color:lightblue;display: none;
-  width: 80%;
-  height: 50%;
-  position: absolute;
-  top: 30%;
-  margin-left:-2%;
-  margin-top: -70px;
-">
-        <table style="border: 1px solid black;background-color:red" width="100%">
-        <tr><td width="100%">
-              <div id ="contentButton" style="background-color:gray;">
-                    <table width="100%" style="border: 2x solid black">
-                    <tr>
-                    <td width="90%" >
-                        <span id="contentTitle"  style="font-size:80%;"></span>
-                    </td>
-                    <td width="10%" style="text-align:right">
-                    <button onclick='$("#contentParent").hide()'  type="button" class="close" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                    </td>
-                    </tr>
-                    </table>
-              </div>
-        </td>     
-        </tr><td width="100%">
-              <div id ="content" style="background-color:green"> 
-              </div>
-        </td></tr>        
-        </table>
-</div>
+
