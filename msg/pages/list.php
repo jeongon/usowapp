@@ -38,11 +38,17 @@ for ($i = 0; $i < count($files); $i++) {
 <div class="container mt-3">
 
   
-<?php for( $i = 0; $i < count($msgs); $i++) { ?>  
+<?php for( $i = 0; $i < count($msgs); $i++)  { 
+    
+    $name = basename( $msgs[$i] );
+    
+    
+    ?>
 
   <div class="d-flex mb-3">
 
-    <div class="p-2 text-left">2020-09-01</div>
+    <div class="p-2 text-left"><?= $name ?></div>
+    <div id="msg-<?= $name ?>"class="p-2 text-left">???</div>
 
     <div class="p-2 flex-fill text-left">
 
@@ -171,6 +177,56 @@ for ($i = 0; $i < count($files); $i++) {
     $(DIV_CONTENT).on('hidden.bs.modal', function(){
       // alert("tras  hide");
     });
+</script>
+
+
+<!-- Verificacion de leido o no --> 
+<script>
+
+function checkCookies(){
+<?php for( $i = 0; $i < count($msgs); $i++) {
+
+	$name = basename( $msgs[$i] );
+?>  
+	checkLeido("msg-<?= $name ?>");
+    
+<?php } ?>
+}
+
+function checkLeido( id ){
+	visto = isViewed(id);
+	
+	obj = document.getElementById(id);
+	
+	if( visto ){
+		obj.innerHTML = "Leido";
+	} else {
+		obj.innerHTML = "Pendiente";
+	}
+	 
+}
+
+/* Indica si un mensaje esta leido */ 
+function isViewed(id) {
+    
+    var res = GCookieGet(id);
+    if( res == null ){
+    	return false;
+    }
+
+	return res=="true";
+
+}
+
+/* Asigna que un mensaje esta leido */ 
+function setViewed(id) {
+
+	GCookieSet(id, "true");
+
+}
+
+window.addEventListener( "load", checkCookies );
+
 </script>
 
 

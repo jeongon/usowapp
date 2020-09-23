@@ -5,6 +5,7 @@
 	include 'lib/utils.php';
 	
 	define("USE_BOOTSTRAP",true); // Para indicar a head.php que incluya librerias BOOTSTRAP
+	define("USE_COOKIES",true); // Para indicar a head.php que incluya librerias GCookie
 	include 'head.php';
 	
 
@@ -59,7 +60,7 @@ switch ($op) {
         break;
         
     case "add":
-        include 'msg/pages/add.php';
+        include 'msg/pages/add-edit.php';
         break;
         
     case "edit":
@@ -112,6 +113,24 @@ switch ($op) {
         ;
     break;
 }
+
+$ERR_STR="Errrrrr--rrrrrrrror";
+// Se gestiona la presentacion de los posibles errores
+if( isset($ERR_STR) ){
+    ?>
+  <div id="uso-alert" class="alert alert-danger alert-dismissible">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+    <strong>Error: </strong> <?= $ERR_STR ?>
+  </div>
+  <script>
+  	$("#uso-alert").css("position","fixed");
+	$("#uso-alert").css("top","100px");
+	$("#uso-alert").css("margin","0px auto");
+	$("#uso-alert").css("width","500px");
+  </script>
+<?php     
+}
+
 ?>
 
 		

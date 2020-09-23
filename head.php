@@ -38,6 +38,12 @@ include("util.php");
 
 <?php  } ?>
 
+<?php  if( defined("USE_COOKIES") ){  ?>
+  
+  <script src="/lib/g-cookie.js"></script>
+
+<?php  } ?>
+
 
 <link rel="stylesheet" href="_styles.css?20200901">
 
